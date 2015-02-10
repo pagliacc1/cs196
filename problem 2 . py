@@ -1,0 +1,12 @@
+def Last_prime(Number):
+	n=2
+	f=[]
+	while(n<=int(Number)):
+		x=1
+		while(Number%n==0):
+			x=0   
+			Number=Number/n
+			if(x==0):
+				f.append(n)
+		n=n+1
+	print max(f)
